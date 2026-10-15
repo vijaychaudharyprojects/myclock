@@ -1,0 +1,8 @@
+{
+  "name": "ChronoPrecision - Online Clock, World Time & Precision Timers",
+  "description": "Free online precision digital and analog clock with world time zones, stopwatch, countdown timer, alarms, and full-screen zen desk display.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

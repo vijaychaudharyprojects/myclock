@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>ChronoPrecision - Online Clock, World Time & Precision Timers</title>
+    <meta name="description" content="Free online precision digital and analog clock with world time zones, stopwatch, countdown timer, alarms, and full-screen zen desk display." />
+    <meta name="keywords" content="online clock, digital clock, analog clock, world time, stopwatch, countdown timer, alarm clock, full screen clock, utc time, accurate time" />
+    <meta name="author" content="ChronoPrecision" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://chronoprecision.pages.dev/" />
+
+    <!-- OpenGraph Social Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ChronoPrecision - Online Clock, World Time & Precision Timers" />
+    <meta property="og:description" content="Free online precision digital and analog clock with world time zones, stopwatch, countdown timer, alarms, and full-screen zen desk display." />
+    <meta property="og:site_name" content="ChronoPrecision" />
+    <meta property="og:url" content="https://chronoprecision.pages.dev/" />
+    <meta property="og:image" content="/favicon.svg" />
+
+    <!-- Twitter / X Metadata -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ChronoPrecision - Online Clock, World Time & Precision Timers" />
+    <meta name="twitter:description" content="Free online precision digital and analog clock with world time zones, stopwatch, countdown timer, alarms, and full-screen zen desk display." />
+    <meta name="twitter:image" content="/favicon.svg" />
+
+    <!-- Favicon and Theme Color -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0284c7" />
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org Structured Data: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ChronoPrecision Clock",
+      "url": "https://chronoprecision.pages.dev/",
+      "description": "High-accuracy digital and analog online clock with world time converter, precision millisecond stopwatch, interval countdown timer, and custom alarms.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Real-time synchronized digital clock with milliseconds",
+        "Classic Swiss-inspired analog clock face",
+        "World time clock for major global financial hubs",
+        "Lap-recording precision stopwatch",
+        "Flexible countdown timer with Pomodoro presets",
+        "Custom desktop alarms with Web Audio alert tones",
+        "Full-screen zen desk display mode",
+        "Dark mode and light mode support"
+      ]
+    }
+    </script>
+
+    <!-- Schema.org Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How accurate is the online clock on ChronoPrecision?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ChronoPrecision uses high-resolution browser performance timing synchronized with your device's local system clock, typically calibrated via Network Time Protocol (NTP) servers to within milliseconds of Coordinated Universal Time (UTC)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use ChronoPrecision as a full-screen desk clock?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Click the Zen / Fullscreen button in the header or clock toolbar to launch a distraction-free, OLED-optimized full-screen clock display suitable for studying, working, or smart displays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the alarm or timer work if my screen goes idle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As long as the browser tab remains active, the synthetic Web Audio API triggers acoustic alerts automatically when your timer or alarm finishes."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Inline script to prevent theme flashing -->
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('chrono_theme');
+          var isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-sky-500 selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

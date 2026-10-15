@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | ChronoPrecision Clock</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        box-sizing: border-box;
+      }
+      .card {
+        background-color: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        padding: 2.5rem;
+        max-width: 480px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      }
+      .time-icon {
+        width: 64px;
+        height: 64px;
+        margin: 0 auto 1.5rem;
+        color: var(--accent);
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin: 0 0 0.5rem;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.6;
+        margin: 0 0 2rem;
+      }
+      .btn {
+        display: inline-block;
+        background-color: var(--accent);
+        color: #0f172a;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        transition: opacity 0.2s;
+      }
+      .btn:hover {
+        opacity: 0.9;
+      }
+      .links {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        font-size: 0.875rem;
+      }
+      .links a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+      .links a:hover {
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <svg class="time-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <circle cx="12" cy="12" r="9" stroke-width="2" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v5l3 3" />
+      </svg>
+      <h1>404</h1>
+      <h2>Time Ran Out For This Link</h2>
+      <p>The page you are looking for doesn't exist, has been moved, or is temporarily out of sync.</p>
+      <a href="/" class="btn">Return to ChronoPrecision Clock</a>
+      <div class="links">
+        <a href="/#world-clock">World Clock</a>
+        <span>&middot;</span>
+        <a href="/#stopwatch">Stopwatch</a>
+        <span>&middot;</span>
+        <a href="/#timer">Timer</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+# Robots.txt for ChronoPrecision
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chronoprecision.pages.dev/sitemap.xml
