@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Page Not Found | ChronoPrecision Clock</title>
+    <meta name="description" content="The requested time utility page was not found. Return to ChronoPrecision online digital and analog clock." />
     <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://myclock.avtool.workers.dev/404.html" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <style>
       :root {
@@ -43,42 +45,57 @@
         color: var(--accent);
       }
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 0 0 0.5rem;
         font-weight: 800;
         letter-spacing: -0.05em;
+        color: var(--text);
+      }
+      h2 {
+        font-size: 1.25rem;
+        margin: 0 0 0.75rem;
+        font-weight: 600;
+        color: var(--text);
       }
       p {
         color: var(--muted);
         line-height: 1.6;
         margin: 0 0 2rem;
+        font-size: 0.95rem;
       }
       .btn {
         display: inline-block;
         background-color: var(--accent);
         color: #0f172a;
-        font-weight: 600;
+        font-weight: 700;
         text-decoration: none;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
-        transition: opacity 0.2s;
+        padding: 0.75rem 1.75rem;
+        border-radius: 0.6rem;
+        transition: opacity 0.2s, transform 0.1s;
       }
       .btn:hover {
-        opacity: 0.9;
+        opacity: 0.92;
+        transform: translateY(-1px);
       }
       .links {
-        margin-top: 1.5rem;
+        margin-top: 1.75rem;
         display: flex;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: 0.75rem;
         justify-content: center;
+        align-items: center;
         font-size: 0.875rem;
       }
       .links a {
         color: var(--muted);
         text-decoration: none;
+        transition: color 0.15s;
       }
       .links a:hover {
-        color: var(--text);
+        color: var(--accent);
+      }
+      .sep {
+        color: #475569;
       }
     </style>
   </head>
@@ -90,14 +107,16 @@
       </svg>
       <h1>404</h1>
       <h2>Time Ran Out For This Link</h2>
-      <p>The page you are looking for doesn't exist, has been moved, or is temporarily out of sync.</p>
-      <a href="/" class="btn">Return to ChronoPrecision Clock</a>
+      <p>The page or time tool you requested does not exist, was moved, or is temporarily out of sync.</p>
+      <a href="https://myclock.avtool.workers.dev/" class="btn">Return to ChronoPrecision Clock</a>
       <div class="links">
-        <a href="/#world-clock">World Clock</a>
-        <span>&middot;</span>
-        <a href="/#stopwatch">Stopwatch</a>
-        <span>&middot;</span>
-        <a href="/#timer">Timer</a>
+        <a href="https://myclock.avtool.workers.dev/#world">World Clock</a>
+        <span class="sep">&middot;</span>
+        <a href="https://myclock.avtool.workers.dev/#stopwatch">Stopwatch</a>
+        <span class="sep">&middot;</span>
+        <a href="https://myclock.avtool.workers.dev/#timer">Timer</a>
+        <span class="sep">&middot;</span>
+        <a href="https://myclock.avtool.workers.dev/#alarm">Alarm</a>
       </div>
     </div>
   </body>

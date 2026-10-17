@@ -18,7 +18,7 @@ export const PrivacyPolicyPage: React.FC = () => {
 
       <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 p-8 sm:p-10 shadow-sm prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-300 text-sm leading-relaxed space-y-6">
         <p>
-          At <strong>ChronoPrecision</strong> (accessible from https://chronoprecision.pages.dev/), the privacy of our visitors is one of our primary priorities. This Privacy Policy document outlines the types of information collected and recorded by ChronoPrecision and how we use it.
+          At <strong>ChronoPrecision</strong> (accessible from https://myclock.avtool.workers.dev/), the privacy of our visitors is one of our primary priorities. This Privacy Policy document outlines the types of information collected and recorded by ChronoPrecision and how we use it.
         </p>
 
         <h2 className="text-xl font-bold text-slate-900 dark:text-white pt-2">
